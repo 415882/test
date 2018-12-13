@@ -1,0 +1,113 @@
+1  # ----------------------------------------------------------------- 
+2  # .gitignore 
+3  # Bare Minimum Git 
+4  # http://ironco.de/bare-minimum-git/ 
+5  # ver 20181206 
+6  # 
+7  # From the root of your project run 
+8  # curl -O https://gist.githubusercontent.com/salcode/10017553/raw/.gitignore 
+9  # to download this file 
+10  # 
+11  # This file is tailored for a general web project, it 
+12  # is NOT optimized for a WordPress project.  See 
+13  # https://gist.github.com/salcode/b515f520d3f8207ecd04 
+14  # for a WordPress specific .gitignore 
+15  # 
+16  # This file specifies intentionally untracked files to ignore 
+17  # http://git-scm.com/docs/gitignore 
+18  # 
+19  # NOTES: 
+20  # The purpose of gitignore files is to ensure that certain files not 
+21  # tracked by Git remain untracked. 
+22  # 
+23  # To ignore uncommitted changes in a file that is already tracked, 
+24  # use `git update-index --assume-unchanged`. 
+25  # 
+26  # To stop tracking a file that is currently tracked, 
+27  # use `git rm --cached` 
+28  # 
+29  # Change Log: 
+30  # 20181206 remove trailing whitespaces 
+31  # 20180714 unignore .phpcs.xml.dist 
+32  # 20170502 unignore composer.lock 
+33  # 20170502 ignore components loaded via Bower 
+34  # 20150326 ignore jekyll build directory `/_site` 
+35  # 20150324 Reorganized file to list ignores first and whitelisted last, 
+36  #          change WordPress .gitignore link to preferred gist, 
+37  #          add curl line for quick installation 
+38  #          ignore composer files (vendor directory and lock file) 
+39  # 20140606 Add .editorconfig as a tracked file 
+40  # 20140418 remove explicit inclusion 
+41  #          of readme.md (this is not an ignored file by default) 
+42  # 20140407 Initially Published 
+43  # 
+44  # ----------------------------------------------------------------- 
+45  
+ 
+46  # ignore all files starting with . or ~ 
+47  .* 
+48  ~* 
+49  
+ 
+50  # ignore node/grunt dependency directories 
+51  node_modules/ 
+52  
+ 
+53  # ignore composer vendor directory 
+54  /vendor 
+55  
+ 
+56  # ignore components loaded via Bower 
+57  /bower_components 
+58  
+ 
+59  # ignore jekyll build directory 
+60  /_site 
+61  
+ 
+62  # ignore OS generated files 
+63  ehthumbs.db 
+64  Thumbs.db 
+65  
+ 
+66  # ignore Editor files 
+67  *.sublime-project 
+68  *.sublime-workspace 
+69  *.komodoproject 
+70  
+ 
+71  # ignore log files and databases 
+72  *.log 
+73  *.sql 
+74  *.sqlite 
+75  
+ 
+76  # ignore compiled files 
+77  *.com 
+78  *.class 
+79  *.dll 
+80  *.exe 
+81  *.o 
+82  *.so 
+83  
+ 
+84  # ignore packaged files 
+85  *.7z 
+86  *.dmg 
+87  *.gz 
+88  *.iso 
+89  *.jar 
+90  *.rar 
+91  *.tar 
+92  *.zip 
+93  
+ 
+94  # ------------------------- 
+95  # BEGIN Whitelisted Files 
+96  # ------------------------- 
+97  
+ 
+98  # track these files, if they exist 
+99  !.gitignore 
+100  !.editorconfig 
+101  !.phpcs.xml.dist 
